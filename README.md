@@ -224,3 +224,43 @@ effective models evaluated.
 ## Decision Tree: The Decision Tree model achieved the highest performance overall, with an
 accuracy of 0.73, precision of 0.71, recall of 0.73, and an F1 score of 0.71. It demonstrated
 superior ability to classify sentiment accurately while maintaining model interpretability.
+
+Based on its leading performance across all evaluation metrics, the Decision Tree was
+selected as the final model for deployment.
+
+<img width="522" alt="Screenshot 2025-07-03 at 3 34 29 PM" src="https://github.com/user-attachments/assets/c63c6938-80de-4c25-9463-5f966d1cb5df" />
+
+## Best Model: Decision Tree: it achieved the highest scores across all four metrics, while also
+being transparent and easy to interpret.
+## 4.3 Sentiment Label Distribution
+Out of 939 posts: 62% Positive, 28% Neutral, 10% Negative. This distribution influenced
+model behavior, and the stratified split helped mitigate any class imbalance.
+
+## 5. Conclusion
+## 5.1 Project Summary
+The goal of this project was to improve the structure and usability of Craigslist’s Gigs section
+using natural language processing and machine learning. We addressed the core issue of
+unstructured, inconsistent postings by developing a system that analyzes:
+● What the post is about (via clustering)
+● How it feels (via sentiment analysis)
+We applied KMeans clustering to group posts into themes like Delivery, Events, Research,
+and Manual Labor, and used VADER sentiment analysis to label each post as Positive,
+Neutral, or Negative. These sentiment labels were then used to train five classification
+models. Among them, the Decision Tree model performed best, achieving 73% accuracy with
+balanced precision and recall.
+## 5.2 Value to Craigslist
+Our solution brings structure and intelligence to Craigslist without changing its core
+interface.
+For Users:
+● Smarter browsing with category and tone filters
+● Faster decision-making with cleaner post summaries
+● Improved trust through clearer, more relevant listings
+For Moderators:
+● Flagging negative/emotional posts for review
+● Time-saving moderation powered by classification
+● Better content quality without manual scanning
+## 5.3 Impact & Scalability
+This solution adds intelligence without changing Craigslist’s simple interface. It can scale to
+other sections like Jobs or Services, improving usability, safety, and engagement across the
+platform.
+
